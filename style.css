@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+/* <img
+src="/assets/images/image-omelette.jpeg"
+alt="Picture of freshly made omelette"
+/> */
+
+header {
+  border: 1px solid black;
+  height: 171px;
+  background: url(/assets/images/image-omelette.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+}
+
+main {
+  padding: 40px 32px;
+}
+
+h1 {
+  color: #312e2c;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0px;
+}
+
+h1 + p {
+  color: #5f564d;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+section {
+  padding: 24px;
+  background-color: #fff7fb;
+}
+
+section p {
+  color: #854632;
+  font-family: "Young Serif", serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+section.preparation p {
+  color: #7a284e;
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  line-height: 100%; /* 20px */
+}
