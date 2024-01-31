@@ -1,18 +1,10 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
 }
 
-/* <img
-src="/assets/images/image-omelette.jpeg"
-alt="Picture of freshly made omelette"
-/> */
-
 header {
-  border: 1px solid black;
   height: 171px;
   background: url(/assets/images/image-omelette.jpeg);
   background-repeat: no-repeat;
@@ -41,11 +33,10 @@ h1 + p {
 }
 
 section {
-  padding: 24px;
-  background-color: #fff7fb;
+  /* padding: 24px; */
 }
 
-section p {
+section p:nth-child(1) {
   color: #854632;
   font-family: "Young Serif", serif;
   font-size: 28px;
@@ -54,10 +45,102 @@ section p {
   line-height: 100%;
 }
 
+section.preparation {
+  background-color: #fff7fb;
+  padding: 24px;
+}
+
+section {
+  line-height: 20px;
+}
 section.preparation p {
   color: #7a284e;
   font-size: 20px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  line-height: 100%; /* 20px */
+}
+
+span.bold {
+  font-weight: bold;
+  margin-left: 10px;
+  color: #5f564d;
+}
+
+span.normal {
+  color: #5f564d;
+  padding-left: 10px;
+}
+
+section.preparation ul {
+  color: #7a284e;
+}
+
+section.instruction ol {
+  color: #7a284e;
+  padding-left: 15px;
+  list-style-position: outside;
+}
+
+section.ingredients ul {
+  color: #7a284e;
+  padding-left: 20px;
+  line-height: 1.9;
+  list-style-position: outside;
+}
+
+section.preparation li {
+  line-height: 1.6;
+}
+
+section.instruction {
+  line-height: 1.8;
+}
+
+hr {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border: 1px solid #e3ddd7;
+}
+
+section p:nth-child(2) {
+  color: #5f564d;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+section.nutrition div {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #e3ddd7;
+}
+
+section.nutrition > div:nth-child(6) {
+  border-bottom: none;
+}
+
+section.nutrition div p:nth-child(1) {
+  color: #5f564d;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+section.nutrition div p:nth-child(2) {
+  color: #854632;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
 }
